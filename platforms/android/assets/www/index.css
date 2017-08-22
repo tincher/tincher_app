@@ -2,24 +2,36 @@
 *   #293347
 */
 
+@font-face {
+    font-family: "TRENCH";
+    src: url("res/trench100free.ttf");
+}
+
+body{
+    font-family: trench;
+    color: white;
+}
+
 
 .content{
     /* min-height: 100%;
     /* height: auto !important; */
-     height: 100%; 
+     height: 100%;
     /* margin: 0 auto -10%; */
     background-color: #293347;
+    color:white;
+    font-size: 50px;
 }
 
 .bottom-navigation-bar{
-     position:fixed; 
+     position:fixed;
     /* left:0px; */
     bottom:0px;
     height:150px;
-     width:100%; 
+     width:100%;
     background:#f9ab4f;
     border-top: white 5px solid;
-    
+
 }
 
 .navigation-list{
@@ -60,6 +72,31 @@
     color: white;
 }
 
+.nav-active{
+    color: #293347 !important;
+}
+
 .nav-link{
     font-size: 5vh;
+}
+
+.profileImage {
+    margin: auto;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 100px;
+    display: block;
+}
+
+.image-row{
+    padding-top: 60px;
+}
+
+
+div p{
+    padding-top: 20px;
+}
+
+.content-line{
+    
 }

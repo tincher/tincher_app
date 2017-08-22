@@ -2,7 +2,18 @@
     <div class="col-sm-2 col-xs-2">
     </div>
     <div class="col-sm-8 col-xs-8">
-        <h1>PROFIL</h1>
-</div>
+        <div class="image-row">
+            <div class="col-sm-6">
+                <img class="profileImage" ng-src="{{profileImageUrl}}"/>
+            </div>
+            <div class="col-sm-6 bordery">
+                <p>{{profile.headUpProfile.username}}</p>
+                <p>{{profile.headUpProfile.compRank}}</p>
+            </div>
+        </div>
+
+
+    </div>
     <div class="col-sm-2 col-xs-2">
+    </div>
 </div>

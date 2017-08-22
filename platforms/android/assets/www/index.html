@@ -6,13 +6,22 @@
 
     <!-- bower -->
     <script src="./bower_components/angular-route/angular-route.js"></script>
-    <link rel="stylesheet" href="./index.css">
+    <script src="./bower_components/ngstorage/ngStorage.min.js"></script>
+    <script src="./bower_components/angular-base64/angular-base64.min.js"></script>
+
+    <!-- css -->
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
 
     <!-- own dependencies -->
     <script src="./views/profile/profile.js"></script>
     <script src="./views/login/login.js"></script>
+    <script src="./views/chats/chats.js"></script>
+    <script src="./views/error/error.js"></script>
+    <script src="./views/newsfeed/newsfeed.js"></script>
+    <script src="./views/search/search.js"></script>
+    <script src="./services/configurationService.js"></script>
     <script src="./index.js"></script>
 
 
@@ -22,14 +31,14 @@
     <div ng-app="tincher" class="row content">
         <ng-view></ng-view>
     </div>
-     <div class="bottom-navigation-bar"> 
+     <div class="bottom-navigation-bar">
         <ul class="navigation-list">
-            <li class="navigation-list-item"><a href="" class="nav-link"><i class="fa fa-user-o navigation-icon" aria-hidden="true"></i></a></li>
-            <li class="navigation-list-item"><a href="" class="nav-link"><i class="fa fa-user-o navigation-icon" aria-hidden="true"></i></a></li>
-            <li class="navigation-list-item"><a href="" class="nav-link"><i class="fa fa-user-o navigation-icon" aria-hidden="true"></i></a></li>
-            <li class="navigation-list-item"><a href="" class="nav-link"><i class="fa fa-user-o navigation-icon" aria-hidden="true"></i></a></li>
+            <li class="navigation-list-item"><a href="#!/newsfeed" class="nav-link nav-active"><i class="fa fa-newspaper-o navigation-icon" aria-hidden="true"></i></a></li>
+            <li class="navigation-list-item"><a href="#!/chats" class="nav-link"><i class="fa fa-comments-o navigation-icon" aria-hidden="true"></i></a></li>
+            <li class="navigation-list-item"><a href="#!/search" class="nav-link"><i class="fa fa-search navigation-icon" aria-hidden="true"></i></a></li>
+            <li class="navigation-list-item"><a href="#!/profile" class="nav-link"><i class="fa fa-user-o navigation-icon" aria-hidden="true"></i></a></li>
         </ul>
-     </div> 
+     </div>
 </body>
 
 </html>
